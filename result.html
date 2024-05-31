@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>クイズ結果</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">クイズ結果</h1>
+        <div id="result-container" class="mt-4 text-center">
+            <!-- 結果をここに表示 -->
+        </div>
+        <div class="text-center mt-4">
+            <a href="index.html" class="btn btn-primary">もう一度挑戦する</a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const params = new URLSearchParams(window.location.search);
+            const score = params.get('score');
+            const total = params.get('total');
+            document.getElementById('result-container').innerHTML = `<h4>あなたのスコア: ${score} / ${total}</h4>`;
+        });
+    </script>
+</body>
+</html>
