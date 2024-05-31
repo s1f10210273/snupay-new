@@ -1,59 +1,107 @@
 document.addEventListener("DOMContentLoaded", function () {
   const quizData = [
     {
-      question: "アメリカ合衆国の首都はどこですか？",
-      options: ["ニューヨーク", "ロサンゼルス", "ワシントンD.C.", "シカゴ"],
-      answer: "ワシントンD.C.",
-    },
-    {
-      question: "ピカソはどの国の出身ですか？",
-      options: ["フランス", "スペイン", "イタリア", "ドイツ"],
-      answer: "スペイン",
-    },
-    {
-      question: "酸素の化学記号は何ですか？",
-      options: ["O", "H", "C", "N"],
-      answer: "O",
-    },
-    {
-      question: "ピタゴラスの定理で有名なギリシャの哲学者は誰ですか？",
-      options: ["アリストテレス", "ソクラテス", "ピタゴラス", "プラトン"],
-      answer: "ピタゴラス",
-    },
-    {
-      question: "第二次世界大戦は何年に始まりましたか？",
-      options: ["1935年", "1939年", "1941年", "1945年"],
-      answer: "1939年",
-    },
-    {
-      question: "エベレスト山の高さは約何メートルですか？",
+      question:
+        "次のうち、レッド・ツェッペリンのメンバーではないのは誰ですか？",
       options: [
-        "6,500メートル",
-        "7,800メートル",
-        "8,000メートル",
-        "8,848メートル",
+        "ジミー・ペイジ",
+        "ロバート・プラント",
+        "ジョン・ポール・ジョーンズ",
+        "ジミ・ヘンドリックス",
       ],
-      answer: "8,848メートル",
+      answer: "ジミ・ヘンドリックス",
     },
     {
-      question: "E=mc²の式を提唱した物理学者は誰ですか？",
-      options: ["ニュートン", "ガリレオ", "アインシュタイン", "ホーキング"],
-      answer: "アインシュタイン",
+      question: "次のアルバムのうち、ピンク・フロイドの作品はどれですか？",
+      options: [
+        "The Wall",
+        "Sgt. Pepper's Lonely Hearts Club Band",
+        "Hotel California",
+        "Born to Run",
+      ],
+      answer: "The Wall",
     },
     {
-      question: "世界で最も人口が多い国はどこですか？",
-      options: ["インド", "アメリカ", "中国", "ロシア"],
-      answer: "中国",
+      question: "クイーンのボーカリストは誰ですか？",
+      options: [
+        "ミック・ジャガー",
+        "フレディ・マーキュリー",
+        "ロジャー・ダルトリー",
+        "ロバート・プラント",
+      ],
+      answer: "フレディ・マーキュリー",
     },
     {
-      question: "イギリスがEUを離脱したことを示す言葉は何ですか？",
-      options: ["Brexit", "Frexit", "Italexit", "Grexit"],
-      answer: "Brexit",
+      question: "次のうち、ニルヴァーナの代表曲はどれですか？",
+      options: [
+        "Smells Like Teen Spirit",
+        "Another Brick in the Wall",
+        "Bohemian Rhapsody",
+        "Hotel California",
+      ],
+      answer: "Smells Like Teen Spirit",
     },
     {
-      question: "太陽系で最も大きな惑星は何ですか？",
-      options: ["地球", "火星", "木星", "土星"],
-      answer: "木星",
+      question: "ビートルズのメンバーで、ベースを担当していたのは誰ですか？",
+      options: [
+        "ジョン・レノン",
+        "ポール・マッカートニー",
+        "ジョージ・ハリスン",
+        "リンゴ・スター",
+      ],
+      answer: "ポール・マッカートニー",
+    },
+    {
+      question:
+        "ジミ・ヘンドリックスが有名になった1969年の音楽フェスティバルは何ですか？",
+      options: [
+        "モントレー・ポップ・フェスティバル",
+        "ウッドストック",
+        "コーチェラ",
+        "グラストンベリー",
+      ],
+      answer: "ウッドストック",
+    },
+    {
+      question: "次のうち、ザ・ローリング・ストーンズの曲はどれですか？",
+      options: [
+        "Paint It Black",
+        "Stairway to Heaven",
+        "Comfortably Numb",
+        "Imagine",
+      ],
+      answer: "Paint It Black",
+    },
+    {
+      question: "次のバンドのうち、カート・コバーンが率いたのはどれですか？",
+      options: [
+        "ニルヴァーナ",
+        "ザ・フー",
+        "レッド・ツェッペリン",
+        "パール・ジャム",
+      ],
+      answer: "ニルヴァーナ",
+    },
+    {
+      question:
+        "AC/DCの有名な曲「Back in Black」が収録されているアルバムは何ですか？",
+      options: [
+        "Highway to Hell",
+        "Back in Black",
+        "Dirty Deeds Done Dirt Cheap",
+        "The Razor's Edge",
+      ],
+      answer: "Back in Black",
+    },
+    {
+      question: "次のうち、メタリカのアルバムはどれですか？",
+      options: [
+        "Master of Puppets",
+        "Appetite for Destruction",
+        "Blizzard of Ozz",
+        "Ride the Lightning",
+      ],
+      answer: "Master of Puppets",
     },
   ];
 
